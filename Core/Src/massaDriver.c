@@ -1,0 +1,41 @@
+#include "massaDriver.h"
+#include <stdio.h>
+#include <string.h>
+
+
+
+void addMass(MassValue_TypeDef massValue,MassDriver_TypeDef *massDriver){
+     massDriver->currentLen++;
+     if(massDriver->currentLen>=256) massDriver->currentLen=0;
+     massDriver->massValue[massDriver->currentLen] = massValue;
+}
+
+int isEmptyBank(MassDriver_TypeDef *massDriver){
+    return (massDriver->currentLen == massDriver->sendLen);  
+}
+
+
+MassValue_TypeDef getMassAndNext(MassDriver_TypeDef *massDriver){  
+       massDriver->sendLen++;
+       if(massDriver->sendLen>=256) massDriver->sendLen=0;
+       return  massDriver->massValue[massDriver->sendLen];   
+}
+
+void initMass(MassDriver_TypeDef *massDriver,RNG_HandleTypeDef *hrng){
+    massDriver->hrng=hrng;
+    for(int i =0;i<8;i++){
+        massDriver->massValue[i].sensor=0;
+        massDriver->massValue[i].mass=getValueSensor(massDriver);
+        massDriver->currentLen++;
+    }
+}
+
+int getValueSensor(MassDriver_TypeDef *massDriver){
+   int number =0;
+   uint32_t num;
+   HAL_RNG_GenerateRandomNumber(massDriver->hrng, &num);
+   if(((int)num) <0) number = (int)(num*(-1));
+   else  number = (int)num;
+   number=number%10000;
+   return number;
+}

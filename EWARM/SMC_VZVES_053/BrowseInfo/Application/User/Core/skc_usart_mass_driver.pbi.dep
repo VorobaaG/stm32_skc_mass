@@ -1,49 +1,49 @@
-E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\SMC_VZVES_053\BrowseInfo\Application\User\Core\skc_usart_mass_driver.pbi: \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\Core\Src\skc_usart_mass_driver.c \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Core/Inc\skc_usart_mass_driver.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Core/Inc\stm32l0xx_hal_conf.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal_rcc.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/CMSIS/Device/ST/STM32L0xx/Include\stm32l0xx.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l053xx.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/CMSIS/Include\core_cm0plus.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Defaults.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Config_Full.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/CMSIS/Include/cmsis_version.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/CMSIS/Include/cmsis_compiler.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/CMSIS/Include\cmsis_iccarm.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\iccarm_builtin.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/CMSIS/Include/mpu_armv7.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stddef.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ysizet.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc_ex.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal_exti.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal_gpio.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_gpio_ex.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal_dma.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal_cortex.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal_flash.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_flash_ex.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_flash_ramfunc.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal_i2c.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_i2c_ex.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal_pwr.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal_rng.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal_tim.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim_ex.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc\stm32l0xx_hal_uart.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\string.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_string.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdio.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdlib.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_stdlib.h \
-  E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Core/Inc/massaDriver.h
+D:\WORK\Zenit\stm32_skc_mass\EWARM\SMC_VZVES_053\BrowseInfo\Application\User\Core\skc_usart_mass_driver.pbi: \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Core\Inc\massaDriver.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_stdlib.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdlib.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdio.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_string.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\string.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart_ex.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_uart.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_tim_ex.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_tim.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rng.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_pwr_ex.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_pwr.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_i2c_ex.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_i2c.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_flash_ramfunc.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_flash_ex.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_flash.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_cortex.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_dma.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio_ex.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_gpio.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_exti.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc_ex.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ysizet.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stddef.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\system_stm32l0xx.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\CMSIS\Include\mpu_armv7.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\iccarm_builtin.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\CMSIS\Include\cmsis_iccarm.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\CMSIS\Include\cmsis_compiler.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\CMSIS\Include\cmsis_version.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Config_Full.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Defaults.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
+  D:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\CMSIS\Include\core_cm0plus.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l053xx.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\CMSIS\Device\ST\STM32L0xx\Include\stm32l0xx.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_def.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Drivers\STM32L0xx_HAL_Driver\Inc\stm32l0xx_hal_rcc.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Core\Inc\stm32l0xx_hal_conf.h \
+  D:\WORK\Zenit\stm32_skc_mass\EWARM\..\Core\Inc\skc_usart_mass_driver.h \
+  D:\WORK\Zenit\stm32_skc_mass\Core\Src\skc_usart_mass_driver.c

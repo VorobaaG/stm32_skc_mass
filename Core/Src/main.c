@@ -53,6 +53,8 @@ UsartDriver_TypeDef usartDriver;
 RNG_HandleTypeDef hrng;
 uint8_t sim;
 MassDriver_TypeDef massDriver;
+uint32_t counterNewSend[8];
+uint32_t timeReloadeNewSend[8];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -87,6 +89,7 @@ static void MX_RNG_Init(void);
 void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart){
           if(huart == &huart1)
           {
+            
            usartDriver.counterError++;
           }
   
@@ -97,6 +100,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
         if(htim->Instance == TIM2) //check if the interrupt comes from TIM1
         {
           if(usartDriver.timeWaitAnswer!=0) usartDriver.timeWaitAnswer++;
+          for(int i =0;i<8;i++){
+            counterNewSend[i]++;
+          }
+          
           
         }
 }
@@ -151,11 +158,29 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-   
+
+      for(int i=0;i<8;i++){
+                 if(counterNewSend[i]>=timeReloadeNewSend[i]) {//Прошло время для следующей генерации цифр
+                timeReloadeNewSend[i]= getValueSensor(&massDriver,5000);//Сгенерировать следующее время ожидания
+                massDriver.currentMass[i].mass =getValueSensor(&massDriver,10000);//Генерация новой текущей массы
+                massDriver.currentMass[i].sensor = i;
+                if(abs(massDriver.currentMass[i].mass-massDriver.prevMass[i].mass)>200){ //Записвать значения если они отличаются на 200 единиц   
+                  addMass(massDriver.currentMass[i],&massDriver);
+                  massDriver.prevMass[i] = massDriver.currentMass[i];
+                }
+                counterNewSend[i]=0;
+              }
+      }
+    
 
     //  HAL_RNG_GenerateRandomNumber(&hrng, &num);
     if(isReady(&usartDriver))  {
-        if(isEmptyBank(&massDriver)==1) getMassAndNext(&massDriver);
+      if(!isEmptyBank(&massDriver)){
+        MassValue_TypeDef temp = getMassAndNext(&massDriver);
+        usartDriver.currentSensorNum = temp.sensor;
+        usartDriver.currentValue = temp.mass;
+        usartDriver.delay = temp.delay;
+      }
     }
     driverProcess(&usartDriver);
     

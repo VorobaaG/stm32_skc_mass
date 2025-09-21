@@ -24,18 +24,22 @@ MassValue_TypeDef getMassAndNext(MassDriver_TypeDef *massDriver){
 void initMass(MassDriver_TypeDef *massDriver,RNG_HandleTypeDef *hrng){
     massDriver->hrng=hrng;
     for(int i =0;i<8;i++){
-        massDriver->massValue[i].sensor=0;
-        massDriver->massValue[i].mass=getValueSensor(massDriver);
+        massDriver->currentMass[i].sensor=i;
+        massDriver->currentMass[i].mass=getValueSensor(massDriver,10000);
+        massDriver->massValue[i].sensor=massDriver->currentMass[i].sensor;
+        massDriver->massValue[i].mass=massDriver->currentMass[i].mass;
         massDriver->currentLen++;
     }
 }
 
-int getValueSensor(MassDriver_TypeDef *massDriver){
+
+
+int getValueSensor(MassDriver_TypeDef *massDriver,int numCrat){
    int number =0;
    uint32_t num;
    HAL_RNG_GenerateRandomNumber(massDriver->hrng, &num);
    if(((int)num) <0) number = (int)(num*(-1));
    else  number = (int)num;
-   number=number%10000;
+   number=number%numCrat;
    return number;
 }

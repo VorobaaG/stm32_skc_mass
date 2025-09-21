@@ -1,41 +1,41 @@
-"E:\1\PROGRAM\USB\SMC_VZVES_053\Core\Src\system_stm32l0xx.c"
+"D:\WORK\Zenit\stm32_skc_mass\Core\Src\system_stm32l0xx.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\SMC_VZVES_053\BrowseInfo\Drivers\CMSIS\system_stm32l0xx.pbi.dep
+D:\WORK\Zenit\stm32_skc_mass\EWARM\SMC_VZVES_053\BrowseInfo\Drivers\CMSIS\system_stm32l0xx.pbi.dep
 -o
-E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\SMC_VZVES_053\BrowseInfo\Drivers\CMSIS\system_stm32l0xx.pbi
+D:\WORK\Zenit\stm32_skc_mass\EWARM\SMC_VZVES_053\BrowseInfo\Drivers\CMSIS\system_stm32l0xx.pbi
 -I
-E:\1\PROGRAM\USB\SMC_VZVES_053\Core\Src
+D:\WORK\Zenit\stm32_skc_mass\Core\Src
 -I
-E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Core/Inc
+D:\WORK\Zenit\stm32_skc_mass\EWARM/../Core/Inc
 -I
-E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc
+D:\WORK\Zenit\stm32_skc_mass\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc
 -I
-E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy
+D:\WORK\Zenit\stm32_skc_mass\EWARM/../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy
 -I
-E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/CMSIS/Device/ST/STM32L0xx/Include
+D:\WORK\Zenit\stm32_skc_mass\EWARM/../Drivers/CMSIS/Device/ST/STM32L0xx/Include
 -I
-E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM/../Drivers/CMSIS/Include
+D:\WORK\Zenit\stm32_skc_mass\EWARM/../Drivers/CMSIS/Include
 -I
-C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
+D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
-C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
+D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
 -I
-C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
+D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
-E:\1\PROGRAM\USB\SMC_VZVES_053\Core\Inc
+D:\WORK\Zenit\stm32_skc_mass\Core\Inc
 -I
-E:\1\PROGRAM\USB\SMC_VZVES_053\Drivers\STM32L0xx_HAL_Driver\Inc
+D:\WORK\Zenit\stm32_skc_mass\Drivers\STM32L0xx_HAL_Driver\Inc
 -I
-E:\1\PROGRAM\USB\SMC_VZVES_053\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy
+D:\WORK\Zenit\stm32_skc_mass\Drivers\STM32L0xx_HAL_Driver\Inc\Legacy
 -I
-E:\1\PROGRAM\USB\SMC_VZVES_053\Drivers\CMSIS\Device\ST\STM32L0xx\Include
+D:\WORK\Zenit\stm32_skc_mass\Drivers\CMSIS\Device\ST\STM32L0xx\Include
 -I
-E:\1\PROGRAM\USB\SMC_VZVES_053\Drivers\CMSIS\Include
+D:\WORK\Zenit\stm32_skc_mass\Drivers\CMSIS\Include
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
@@ -296,8 +296,8 @@ E:\1\PROGRAM\USB\SMC_VZVES_053\Drivers\CMSIS\Include
 -D__EDG_INT128_EXTENSIONS_ALLOWED=0
 -DUSE_HAL_DRIVER=1
 -DSTM32L053xx=1
--D_DLIB_CONFIG_FILE_HEADER_NAME="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\DLib_Config_Full.h"
--D_DLIB_CONFIG_FILE_STRING="C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Config_Full.h"
+-D_DLIB_CONFIG_FILE_HEADER_NAME="D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\DLib_Config_Full.h"
+-D_DLIB_CONFIG_FILE_STRING="D:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Config_Full.h"
 -D__VERSION__="IAR ANSI C/C++ Compiler V9.10.1.308/W64 for ARM"
 -D_VA_DEFINED=
 -D_VA_LIST=struct __va_list

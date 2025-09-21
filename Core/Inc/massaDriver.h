@@ -11,7 +11,9 @@ typedef struct{
 }MassValue_TypeDef;
    
 typedef struct{
-   MassValue_TypeDef massValue[255];
+   MassValue_TypeDef massValue[255];//Бувер для сохраненеия не отпрвленных масс
+   MassValue_TypeDef currentMass[8];//текущее состояние датчиков 
+   MassValue_TypeDef prevMass[8];//предыдущее значение
    uint32_t currentLen;
    uint32_t sendLen;
    RNG_HandleTypeDef *hrng;
@@ -23,5 +25,5 @@ void addMass(MassValue_TypeDef massValue,MassDriver_TypeDef *massDriver);
 int isEmptyBank(MassDriver_TypeDef *massDriver);
 MassValue_TypeDef getMassAndNext(MassDriver_TypeDef *massDriver);
 void initMass(MassDriver_TypeDef *massDriver,RNG_HandleTypeDef *hrng);
-int getValueSensor(MassDriver_TypeDef *massDriver);
+int getValueSensor(MassDriver_TypeDef *massDriver,int numCrat);
 #endif // MASSA_DRIVER

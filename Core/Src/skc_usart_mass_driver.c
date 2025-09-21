@@ -79,7 +79,7 @@ void setValue(UsartDriver_TypeDef *driver,MassValue_TypeDef massValue){
 
 void sendMassFrame(int currentFrame, int currentSensor, int currentValue,int delay,UART_HandleTypeDef *huart){
   char response[50]={0};
-  sprintf(response, "VorG.%i.%i.%i.%i./n",currentFrame,currentSensor,currentValue,delay);  
+  sprintf(response, "VorG.%i.%i.%i.%i.\n",currentFrame,currentSensor,currentValue,delay);  
   HAL_UART_Transmit_IT(huart, (const uint8_t *) response, strlen(response)); 
   
   

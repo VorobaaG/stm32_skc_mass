@@ -32,6 +32,17 @@ void initMass(MassDriver_TypeDef *massDriver,RNG_HandleTypeDef *hrng){
     }
 }
 
+void addFrame(Frame_TypeDef *frame, int mass[8],uint32_t *frameNum,uint32_t *number){
+   frame->frameNum=(*frameNum);
+   for(int i=0;i<8;i++){
+    frame->massValue[i]= mass[i];
+   }
+   frame->crc = 0xff;
+   (*number)++;
+   if((*number)>=256) (*number)=0;
+   
+   (*frameNum)++;
+}
 
 
 int getValueSensor(MassDriver_TypeDef *massDriver,int numCrat){

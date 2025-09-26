@@ -14,22 +14,27 @@
 #define GET_FRAME   HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,GPIO_PIN_RESET);
 
 
+typedef enum{
+  WAIT,
+  INIT,
+  SEND_NEXT,
+  REPEAT    
+}stateUsart_TypeEnum;
+
 typedef struct{
   char buf[255];
-  char response[100];
+  char response[150];
   uint16_t len;//текущий символ в буфере для записи
-  uint32_t varification;
-  uint32_t currentFrame;//Текущий кадр
-  uint32_t currentValue;//Значение датчика
-  uint32_t currentSensorNum;//номер датчика
-  uint32_t delay;
-  uint8_t sendNewFrame;//Готовность для отправки нового кадра
-  uint8_t sendNewData;//готовность записать в структуру новый кадр
-  uint32_t timeWaitAnswer;//Время ожидания ответа
-  uint32_t counterError;
-  UART_HandleTypeDef *huart;
-  
+  //uint32_t varification;   ?????????
+  uint32_t timeWaitNewSymbol;
+  Frame_TypeDef *frame[255];
+  uint32_t numberSendFrame;   //Номер текущего frame
+  uint32_t currentFrame;//Уникалный номер каждого кадра
+  stateUsart_TypeEnum state;
+  int valueStatusFrame;
+  UART_HandleTypeDef *huart;   
 }UsartDriver_TypeDef;
+
 
 
 void initUsartDriver(UsartDriver_TypeDef *driver,UART_HandleTypeDef *huart);
@@ -37,5 +42,9 @@ void setValue(UsartDriver_TypeDef *driver,MassValue_TypeDef massValue);
 void reciveUsartSumbol(UsartDriver_TypeDef *driver,uint8_t rxByte);
 uint32_t isReady(UsartDriver_TypeDef *driver);
 void driverProcess(UsartDriver_TypeDef *driver);
-void sendMassFrame(int currentFrame, int currentSensor, int currentValue,int delay,UART_HandleTypeDef *huart);
+void sendMassFrame(UsartDriver_TypeDef *driver,int sendFrame);
+
+
+void sendFrame(UsartDriver_TypeDef *driver);
+
 #endif // SKC_USART_MASS_DRIVER

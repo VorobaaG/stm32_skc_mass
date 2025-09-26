@@ -55,6 +55,11 @@ uint8_t sim;
 MassDriver_TypeDef massDriver;
 uint32_t counterNewSend[8];
 uint32_t timeReloadeNewSend[8];
+
+
+
+uint32_t counterMass;
+uint32_t valueMass;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -82,15 +87,17 @@ static void MX_RNG_Init(void);
 {
           if(huart == &huart1)
           {
+           usartDriver.state = WAIT;
            GET_FRAME;
+
           }
 }
 
 void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart){
           if(huart == &huart1)
-          {
-            
-           usartDriver.counterError++;
+          {   
+          GET_FRAME;
+          usartDriver.state = WAIT;
           }
   
 }
@@ -99,11 +106,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
         if(htim->Instance == TIM2) //check if the interrupt comes from TIM1
         {
-          if(usartDriver.timeWaitAnswer!=0) usartDriver.timeWaitAnswer++;
-          for(int i =0;i<8;i++){
-            counterNewSend[i]++;
-          }
-          
+
+             usartDriver.timeWaitNewSymbol++;
+             if(usartDriver.timeWaitNewSymbol >=100) usartDriver.len=0;
           
         }
 }
@@ -159,29 +164,6 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-      for(int i=0;i<8;i++){
-                 if(counterNewSend[i]>=timeReloadeNewSend[i]) {//Прошло время для следующей генерации цифр
-                timeReloadeNewSend[i]= getValueSensor(&massDriver,5000);//Сгенерировать следующее время ожидания
-                massDriver.currentMass[i].mass =getValueSensor(&massDriver,10000);//Генерация новой текущей массы
-                massDriver.currentMass[i].sensor = i;
-                if(abs(massDriver.currentMass[i].mass-massDriver.prevMass[i].mass)>200){ //Записвать значения если они отличаются на 200 единиц   
-                  addMass(massDriver.currentMass[i],&massDriver);
-                  massDriver.prevMass[i] = massDriver.currentMass[i];
-                }
-                counterNewSend[i]=0;
-              }
-      }
-    
-
-    //  HAL_RNG_GenerateRandomNumber(&hrng, &num);
-    if(isReady(&usartDriver))  {
-      if(!isEmptyBank(&massDriver)){
-        MassValue_TypeDef temp = getMassAndNext(&massDriver);
-        usartDriver.currentSensorNum = temp.sensor;
-        usartDriver.currentValue = temp.mass;
-        usartDriver.delay = temp.delay;
-      }
-    }
     driverProcess(&usartDriver);
     
   }
@@ -323,7 +305,7 @@ static void MX_USART1_UART_Init(void)
 
   /* USER CODE END USART1_Init 1 */
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 9600;
+  huart1.Init.BaudRate = 19200;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;

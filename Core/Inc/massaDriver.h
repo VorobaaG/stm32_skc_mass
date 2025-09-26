@@ -21,9 +21,18 @@ typedef struct{
    
 
 
+
+typedef struct{
+  int massValue[8];
+  uint32_t frameNum;
+  uint32_t crc;
+}Frame_TypeDef;
+
 void addMass(MassValue_TypeDef massValue,MassDriver_TypeDef *massDriver);
 int isEmptyBank(MassDriver_TypeDef *massDriver);
 MassValue_TypeDef getMassAndNext(MassDriver_TypeDef *massDriver);
 void initMass(MassDriver_TypeDef *massDriver,RNG_HandleTypeDef *hrng);
 int getValueSensor(MassDriver_TypeDef *massDriver,int numCrat);
+
+void addFrame(Frame_TypeDef *frame, int mass[8],uint32_t *frameNum,uint32_t *number);
 #endif // MASSA_DRIVER

@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "D:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\WORK\Zenit\stm32_skc_mass\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.general.xcl" --backend -f "D:\WORK\Zenit\stm32_skc_mass\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.general.xcl" --backend -f "E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.driver.xcl" 
 }
 else
 {
-& "D:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\WORK\Zenit\stm32_skc_mass\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.general.xcl" --debug_file=$debugfile --backend -f "D:\WORK\Zenit\stm32_skc_mass\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.general.xcl" --debug_file=$debugfile --backend -f "E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.driver.xcl" 
 }

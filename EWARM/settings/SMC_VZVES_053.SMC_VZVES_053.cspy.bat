@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\WORK\Zenit\stm32_skc_mass\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.general.xcl" --backend -f "D:\WORK\Zenit\stm32_skc_mass\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.general.xcl" --backend -f "E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\WORK\Zenit\stm32_skc_mass\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.general.xcl" "--debug_file=%~1" --backend -f "D:\WORK\Zenit\stm32_skc_mass\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.general.xcl" "--debug_file=%~1" --backend -f "E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\settings\SMC_VZVES_053.SMC_VZVES_053.driver.xcl" 
 
 @echo off 
 :end

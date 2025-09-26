@@ -1,14 +1,14 @@
-"D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armPROC.dll" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armPROC.dll" 
 
-"D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armSTLINK.dll" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armSTLINK.dll" 
 
-"D:\WORK\Zenit\stm32_skc_mass\EWARM\SMC_VZVES_053\Exe\SMC_VZVES_053.out" 
+"E:\1\PROGRAM\USB\SMC_VZVES_053\EWARM\SMC_VZVES_053\Exe\SMC_VZVES_053.out" 
 
---plugin="D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armbat.dll" 
+--plugin="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armbat.dll" 
 
---device_macro="D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\debugger\ST\STM32L0xx.dmac" 
+--device_macro="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\debugger\ST\STM32L0xx.dmac" 
 
---flash_loader="D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\flashloader\ST\FlashSTM32L0xxx8.board" 
+--flash_loader="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\flashloader\ST\FlashSTM32L0xxx8.board" 
 
 
 
